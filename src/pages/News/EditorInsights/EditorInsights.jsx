@@ -6,7 +6,7 @@ import third from "../../../assets/3.png";
 
 const EditorInsights = () => {
   return (
-    <div>
+    <div className="mt-9">
       <Row xs={1} md={2} lg={3} className="g-4">
         <Col>
           <Card>
