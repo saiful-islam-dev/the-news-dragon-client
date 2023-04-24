@@ -1,15 +1,11 @@
 import React, { useContext } from "react";
 import logo from "../../../assets/logo.png";
 import moment from "moment";
-import { Button, Container, Nav, NavDropdown, Navbar,} from "react-bootstrap";
+import { Button, Container} from "react-bootstrap";
 import Marquee from "react-fast-marquee";
-import { Link } from "react-router-dom";
-import { AuthContext } from "../../../provider/Authprovider";
-import { FaUserCircle } from "react-icons/fa";
 
 const Header = () => {
-  const { user } = useContext(AuthContext);
-
+  
   return (
     <Container>
       <div className="text-center">
@@ -28,7 +24,7 @@ const Header = () => {
           just some text......
         </Marquee>
       </div>
-      <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+      {/* <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
         <Container>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -52,7 +48,7 @@ const Header = () => {
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </Navbar>
+      </Navbar> */}
     </Container>
   );
 };
