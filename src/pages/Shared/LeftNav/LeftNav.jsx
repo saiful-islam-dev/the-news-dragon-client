@@ -11,6 +11,7 @@ const LeftNav = () => {
       .catch((error) => console.log(error));
   }, []);
 
+  console.log(categories);
   return (
     <div>
       <h2>This is right Nav</h2>
